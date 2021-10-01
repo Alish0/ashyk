@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ashyq</title>
+</head>
+
+<body>
+    <div class="toolbar">
+        <button class="arrow-button" onclick="window.location.href='https://kaspi.kz'">
+        <img class="back" src="img/arrow.png">
+        </button>
+        <div class="toolbar-content">
+            <img class="ashyq-logo" src="img/ashyqlogo.png" alt="">
+            <p class="title">ASHYQ. Статус по коронавирусу</p>
+        </div>
+    </div>
+
+    <div class="status">
+        <p class="status-text">Безопасный</p>
+        <p class="status-description">Не имеет ограничений.</p>
+        <p class="status-description">ПЦР-тест отрицательный.</p>
+        <p class="status-deadline">Срок действия статуса: до 25.10.2022</p>
+
+    </div>
+
+    <div class="timer">
+        <p class="timer-info"> Вы можете войти в течение </p>
+        <p id="countdown">05:00:00</p>
+    </div>
+
+    <div class="IIN">
+        <p class="IIN1"> ИИН </p>
+        <p class="IIN1-text"> 020311550707 </p>
+    </div>
+
+    <div class="BIN">
+        <p class="BIN1"> ИИН/БИН организации </p>
+        <p class="BIN1-text"> 000000000010 </p>
+    </div>
+
+    <button class="button-back" onclick="window.location.href='https://kaspi.kz'"> 
+        Вернуться на Гравную Kaspi.kz 
+    </button>
+
+
+    <script src="js/timer.js"></script>
+    <script>
+        const element = document.getElementById('countdown');
+        const countdown = new Countdown(element, 300);
+        countdown.start();
+    </script>
+</body>
+
+</html>
