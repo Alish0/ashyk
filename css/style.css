@@ -123,13 +123,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: gray;
 }
 
 .back {
     height: 23px;
     padding-left: 5px;
-    background: #ffffff;
+    background: gray;
 }
 
 .button-back {
