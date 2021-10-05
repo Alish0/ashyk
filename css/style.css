@@ -123,12 +123,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
 }
 
 .back {
     height: 23px;
     padding-left: 5px;
-    background: white;
+    background: #ffffff;
 }
 
 .button-back {
