@@ -48,7 +48,7 @@
 
     <div class="IIN">
         <p class="IIN1">ИИН</p>
-        <p class="IIN1-text">000311558707</p>
+        <p class="IIN1-text"></p>
     </div>
 
     <div class="BIN">
@@ -56,8 +56,8 @@
         <p class="BIN1-text">020540714310</p>
     </div>
 
-    <button class="button-back" onclick="window.location.href='https://kaspi.kz'"> 
-        Вернуться на Гравную Kaspi.kz 
+    <button class="button-back" onclick="window.location.href='https://kaspi.kz'">
+        Вернуться на Гравную Kaspi.kz
     </button>
 
 
@@ -66,6 +66,15 @@
         const element = document.getElementById('countdown');
         const countdown = new Countdown(element, 300);
         countdown.start();
+
+        const iinElement = document.querySelector('.IIN1-text');
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        if (params.iin) {
+          iinElement.innerHTML = params.iin;
+        } else {
+          iinElement.innerHTML = '000311558707'
+        }
     </script>
 </body>
 
